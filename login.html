@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Login</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords"> 
+
+<script language=javascript type="text/javascript">
+ 
+ function Validatetext()
+{
+	if(document.myForm.username.value=="Username")
+	{
+		window.alert("Enter Your Username");
+		return;
+	}
+	if(document.myForm.password.value=="Password")
+	{
+		window.alert("Enter Your password");
+		return;
+	}
+}	
+</script>
+
+ <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+</head>
+<body>
+<div class="container">
+<h1>LKBay.com</h1>
+     <div class="contact-form">
+	 <div class="profile-pic">
+	 <img src="images/1.png" alt="User Icon"/>
+	 </div>	 
+	 <div class="signin">
+     <form method=post  name="myForm">
+	      <input type="text" class="user" value="Username"name="username"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" >
+		  <input type="password" class="pass" value="Password"name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" >
+		  <p><a href="#">Forgot Password?</a></p>
+		   <p><span style="color:black;font-weight:bold;">Don't have an account?</span><a href="#"> Create a New Account</a></p> 
+     </form>
+	 </div>	 
+	 <input type="submit" name="submit"  value="Login"  onclick="Validatetext()" >
+	   
+	 </div>
+</div>
+
+</body>
+</html>
